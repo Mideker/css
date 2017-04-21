@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<base>
+<basefont>
+<link>
+<meta charset="utf-8">
+<style>
+div#d1{
+height : 200px;
+width : 300px;
+color:green;
+background : yellow;
+float : left ;
+}
+
+div#d2{
+height : 500px;
+width : 300px;
+color:green;
+background : lightgreen;
+float : right;
+}
+
+INPUT {
+color : green;
+text-align : center
+}
+</style>
+<title> div Размер</title>
+</head>
+<body>
+<div id="d1"> Just do it</div>
+<div style="clear:rigth"> Just content </div>
+<div id="d2"> <h3> change dimension </h3>
+div#d1
+<p>height : 200px</p>
+<input> <button id="mybutton">change</button>
+<p>width : 300px <button id="mybut2">check</button></p>
+<p>color:green</p>
+<p>background : yellow</p>
+<p>float : left </p>
+
+ </div>
+<script>
+ // document.write("привет");
+ var b = document.getElementById("mybutton");
+ var b2 = document.getElementById("mybut2");
+ var i = document.getElementsByTagName("input")[0];
+ var d = document.getElementById("d1");
+  b.onclick = function(){
+ //alert(i.value) ;
+	d.style.height = i.value; 
+//i.type = o.value ;
+ };
+  b2.onclick = function(){
+	d.style.height = "200px" 
+//d.style.height ='350px';
+ alert(d.style.height) ;
+ };
+</script
+</body>
+</html>

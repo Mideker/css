@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<base>
+<basefont>
+<link>
+<meta charset="utf-8">
+<style>
+H1 {
+color:green;
+text-align : center
+}
+</style>
+<title> Шаблон</title>
+
+</head>
+<body>
+test page
+<article>
+тестирование Input tag
+</article>
+<h1 id="myh"> параграф 1 </h1>
+<input>
+<button id="mybutton"> h1 изменить</button>
+<select>
+<optgroup label='text-align'>
+<option>center</option>
+<option>justify</option>
+<option>left</option>
+<option>right</option>
+<option>start</option>
+<option> end</option>
+</optgroup>
+</select>
+<script>
+ // document.write("привет");
+ var b = document.getElementById("mybutton");
+ var h = document.getElementsByTagName("h1")[0];
+ var o = document.getElementsByTagName("select")[0];
+  b.onclick = function(){
+// alert(h.style.textAlign) ;
+ h.style.textAlign = o.value ;
+ };
+</script>
+</body>
+</html>
